@@ -3,27 +3,30 @@
   height: 100vh;
 }
 
+.App h3 {
+  padding-top: 40px;
+  margin-left: 40%;
+}
+.App p {
+  margin-left: 38%;
+  padding-bottom: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
-.Calendar {
-  border: black;
+.myCalendar {
+  border: solid black;
   border-style: groove;
   position: fixed;
-  top: 10%;
-  left: 30%
-}
-
-.Calendar h1 {
-  font-size: medium;
-  text-align: center;
-  padding: 1rem;
+  left: 30%;
+  margin-left: 400px;
 }
 
 .Sidebar {
   height: 90%;
-  width: 170px;
+  width: 180px;
   background-color: mediumaquamarine;
   position: absolute;
 }
@@ -31,8 +34,9 @@ body {
 .Sidebar h1 {
   padding: 1rem;
   text-align: center;
+  font-weight: bold;
   font-size: 40px;
-  color: #e6f294;
+  color: #f3ffa6;
   background-color: mediumaquamarine;
 }
 
