@@ -6,22 +6,22 @@ import MainPage from './pages';
 import NotFoundPage from './pages/404';
 import ProfilePage from './pages/profile';
 
-class App extends Component  {
-  render() {
-    return (
-      <div className="App">
-        <Router>
-          <Switch>
-            <Route exact path="/" component={MainPage} />
-            <Route exact path="/home" component={MainPage} />
+
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Switch>
+            <Route exact path="/calendar" component={MainPage} />
             <Route exact path="/profile" component={ProfilePage} />
             <Route exact path="/404" component={NotFoundPage} />
             <Redirect to="/404"/>
           </Switch>
         </Router>
-      </div>
-    )
-  }
+    </div>
+  );
 }
+
 
 export default App;
