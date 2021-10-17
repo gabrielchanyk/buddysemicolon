@@ -11,6 +11,7 @@ import MainPage from './pages';
 import NotFoundPage from './pages/404';
 import ProfilePage from './pages/profile';
 
+<!-- comment -->
 
 function App() {
   
