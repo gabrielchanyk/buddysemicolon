@@ -2,11 +2,11 @@
   text-align: center;
 }
 .App h3 {
+  text-align: center;
   padding-top: 40px;
-  margin-left: 40%;
 }
 .App p {
-  margin-left: 38%;
+  text-align: center;
   padding-bottom: 0;
 }
 
@@ -15,10 +15,11 @@ body {
   padding: 0;
 }
 .myCalendar {
+  align-self: center;
   border: solid black;
   border-style: groove;
   position: fixed;
-  left: 30%;
+  left: 25%;
   margin-left: 400px;
 }
 
