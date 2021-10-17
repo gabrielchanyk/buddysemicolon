@@ -10,14 +10,11 @@ function Home() {
     return (
         <>
         
-        <Sidebar/>
-        <div>
-            <div className="center">
+            <Sidebar/>
+    
+  
              <Animal/>
-            </div>
-          
-         
-        </div>
+ 
         </>
     )
 }

@@ -10,6 +10,7 @@ import MainPage from './pages';
 import NotFoundPage from './pages/404';
 import ProfilePage from './pages/profile';
 import Chat from './components/Chat/Chat';
+import Signin from './components/Signin/Signin';
 
 
 function App() {

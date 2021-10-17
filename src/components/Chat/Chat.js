@@ -7,6 +7,7 @@ import './Chat.css';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import { formatMs } from '@material-ui/core';
+import Sidebar from '../Sidebar';
 
 firebase.initializeApp({
     apiKey: "AIzaSyCQytXfHlQhmkgBXWmMcOfMfUum_w8aAhg",
@@ -19,7 +20,7 @@ firebase.initializeApp({
 })
 
 function Chat() {
-   <div className="chatbox"></div>
+   
     const auth = firebase.auth();
     const firestore = firebase.firestore();
 
@@ -86,7 +87,7 @@ function Chat() {
     
     return (
 
-        <>
+        <><Sidebar/>
         <div className="chatbox">
             <header>
                 <section>

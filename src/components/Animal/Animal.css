@@ -2,6 +2,32 @@
     height: 300px;
 }
 
+.infobox{
+    width: 450px;
+    height: 250px;
+    text-align: center;
+    background: #e0cae0;
+    border-radius: 25px;
+    position: absolute;
+    margin: 100px 80px 80px 420px;
+}
+.infobox p {
+    margin: 15% 20%;  
+    font-size: 22px;
+    color: white;
+}
+
+.animalbox{
+    width: 450px;
+    height: 250px;
+    margin: 100px 450px;
+    text-align: left;
+    background: transparent;
+    border-radius: 5px;
+    position: absolute;
+    margin: 80px;
+
+}
 
 .footer {
     position: fixed;
@@ -18,3 +44,18 @@
     color:#928ddb;
 }
 
+
+.boxcont{
+    width:  1000px;
+    height: 480px;
+    margin-top: 100px;
+    left:25%;
+    background: #a5abe5;
+    /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2); */
+    position: relative;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: ;
+}

@@ -1,11 +1,14 @@
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    height: 100%;
-    display: flex;
+.boxcont{
+    width:  1000px;
+    height: 480px;
+    margin-top: 100px;
+    left:25%;
+    background: #a5abe5;
+    /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2); */
+    position: relative;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-content: ;
 }
