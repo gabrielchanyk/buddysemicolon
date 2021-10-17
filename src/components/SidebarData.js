@@ -15,6 +15,16 @@ export const SidebarData = [
         url: "/profile"
     },
     {
+        title: "Calendar",
+        icon: <AccountCircleIcon />,
+        url: "/calendar"
+    },
+    {
+        title: "Pet",
+        icon: <AccountCircleIcon />,
+        url: "/pet"
+    },
+    {
         title: "Logout",
         icon: <Logout />,
         url: "/logout"

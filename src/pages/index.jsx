@@ -6,6 +6,7 @@ const MainPage = () => {
   const [selectedDay, setSelectedDay] = useState([]);
   return (
     <div className="App">
+      
       <Sidebar />
       <h3>Daily Check-in
         <br />

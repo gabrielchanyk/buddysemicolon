@@ -24,8 +24,8 @@ body {
 
 .Sidebar {
   height: 90%;
-  width: 180px;
-  background-color: mediumaquamarine;
+  width: 10%;
+  background-color: rgb(152, 202, 185);
   position: absolute;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .SidebarList .row {
-  width: 100%;
+  width: 90%;
   height: 50px;
   list-style-type: none;
   margin: 10%;
@@ -69,7 +69,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
   color: white;
   align-items: center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

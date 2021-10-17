@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 import Home from './components/pages/HomePage/Home';
 import Signin from './components/Signin/Signin';
 import Login from './components/pages/Login';
@@ -12,13 +13,16 @@ import ProfilePage from './pages/profile';
 
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar />     
         <Switch>
             <Route path='/' exact component={Login} />
-            <Route path='/home' component={Home} />
+            <Route path='/dashboard' exact component={ProfilePage} />
+            <Route path='/home' component={ProfilePage} />
+            <Route path='/pet' component={Home} />
             <Route path='/sign-in' component={Signin} />
             <Route exact path="/calendar" component={MainPage} />
             <Route exact path="/profile" component={ProfilePage} />
