@@ -1,10 +1,45 @@
 .App {
   text-align: center;
 }
+.App h3 {
+  padding-top: 40px;
+  margin-left: 40%;
+}
+.App p {
+  margin-left: 38%;
+  padding-bottom: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.myCalendar {
+  border: solid black;
+  border-style: groove;
+  position: fixed;
+  left: 30%;
+  margin-left: 400px;
+}
+
+.Sidebar {
+  height: 90%;
+  width: 180px;
+  background-color: mediumaquamarine;
+  position: absolute;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.Sidebar h1 {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #f3ffa6;
+  background-color: mediumaquamarine;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,20 +47,41 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.SidebarList {
+  height: auto;
+  font-size: small;
+  padding: 1rem 1rem;
+  width: 90%;
+}
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  margin: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  align-items: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  color: yellow;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +91,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+.row #icon {
+  flex: 20%;
+  display: grid;
+  place-items: left;
+}
+
+.row #title {
+  flex: 60%;
 }
