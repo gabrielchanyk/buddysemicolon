@@ -71,7 +71,7 @@
     background: linear-gradient(
       90deg,
       rgb(212, 139, 214) 0%,
-      rgb(151, 105, 202) 100%
+       #a5abe5 100%
     );
     outline: none;
     border: none;
@@ -83,8 +83,8 @@
     cursor: pointer;
     background: linear-gradient(
       90deg,
-      rgb(39, 143, 255) 0%,
-      rgb(12, 99, 250) 100%
+      rgb(136, 167, 201) 0%,
+      rgb(90, 120, 172) 100%
     );
     transition: all 0.4s ease-out;
   }

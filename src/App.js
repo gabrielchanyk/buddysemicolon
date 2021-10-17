@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Home from './components/pages/HomePage/Home';
-import Signin from './components/Signin/Signin';
 import Login from './components/pages/Login';
 import React, { Component, useState } from 'react';
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
@@ -10,6 +9,8 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-ro
 import MainPage from './pages';
 import NotFoundPage from './pages/404';
 import ProfilePage from './pages/profile';
+import Chat from './components/Chat/Chat';
+import Signin from './components/Signin/Signin';
 
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />     
+        <Navbar />   
         <Switch>
             <Route path='/' exact component={Login} />
             <Route path='/dashboard' exact component={ProfilePage} />
+            <Route path='/chat' exact component={Chat} />
             <Route path='/home' component={ProfilePage} />
             <Route path='/pet' component={Home} />
             <Route path='/sign-in' component={Signin} />
