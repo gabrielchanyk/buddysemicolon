@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
-import Signin from '../../Signin/Signin';
+import Animal from '../../Animal/Animal';
 import {homeObj} from './Data';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
     return (
         <div>
-            <Signin/>
+            <Animal/>
+         
         </div>
     )
 }

@@ -36,32 +36,37 @@ function Navbar() {
                     </div>
                     <ul className = {click ? 'nav-menu active' : 'nav-menu'}>
                         <li className="nav-item">
-                            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                                Home
+                            <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
+                                Pet
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                                Page 1
+                                Calendar
                             </Link>
                         </li>
-                        <li className="nav-btn">
+                        <li className="nav-item">
+                            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                                Sign in
+                            </Link>
+                        </li>
+                        {/* <li className="nav-btn">
                             {button ? (
-                                <Link to='/sign-up' className="btn-link" >
+                                <Link to='/' className="btn-link" >
                                     <Button buttonStyle='btn--outline'>
-                                        Sign Up
+                                        Sign In
                                     </Button>
                                 </Link>
                             ) : (
-                                <Link to='/sign-up' className="btn-link" onClick={closeMobileMenu}>
+                                <Link to='/' className="btn-link" onClick={closeMobileMenu}>
                                     <Button buttonStyle='btn--outline'
                                     buttonSize='btn--mobile'>
-                                        Sign Up
+                                        Sign In
                                     </Button>
                                 </Link>
                             )}
                             
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

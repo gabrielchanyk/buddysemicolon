@@ -9,7 +9,7 @@ const Signup = ({ submitForm }) =>  {
     const {handleChange, values, handleSubmit, errors} = useForm(validate);
 
     return (
-       <div className="form-content-right">
+       <div className="form">
            <form className="form" onSubmit={handleSubmit}>
                <h1> Register!</h1>
                <div className="form-inputs">
@@ -56,11 +56,11 @@ const Signup = ({ submitForm }) =>  {
                     {errors.password2 && <p>{errors.password2}</p>}
                </div>
 
-               <Button buttonStyle='btn--primary' buttonColor='blue' type="submit">
+               <button className='form-input-btn' type="submit">
                    Register
-                </Button>
-                <span className="form-input-login">Already have an account? Log in<Link to="/sign-in"> here</Link>.
-                </span>
+                </button>
+                 {/* <span className="form-input-login">Already have an account? Log in<Link to="/sign-in"> here</Link>.
+                </span> */}
            </form>
        </div>
     )

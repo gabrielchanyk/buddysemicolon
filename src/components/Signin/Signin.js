@@ -2,12 +2,13 @@ import React, {useState} from 'react'
 import { Button } from '../Button'
 import { Link } from 'react-router-dom'
 import useForm from './useForm'
+import '../Forms.css';
 
 function Signin() {
     const {handleChange, values, handleSubmit} = useForm();
 
     return (
-       <div className="form-content-right">
+       <div className="form">
            <form className="form" onSubmit={handleSubmit}>
                <h1> Log In!</h1>
                <div className="form-inputs">
@@ -42,11 +43,11 @@ function Signin() {
                         
                </div>
 
-               <Button buttonStyle='btn--primary' buttonColor='blue' type="submit">
+               <button className='form-input-btn' type="submit">
                    Log In
-                </Button>
-                <span className="form-input-login">Don't have an account yet? Register<Link to="/sign-up"> here</Link>.
-                            </span>
+                </button>
+                {/* <span className="form-input-login">Don't have an account yet? Register<Link to="/sign-up"> here</Link>.
+                            </span> */}
            </form>
        </div>
     )
