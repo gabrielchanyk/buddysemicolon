@@ -7,6 +7,7 @@ const ProfilePage = () => {
     const {handleChange, values, handleSubmit} = useForm();
 
     return (
+        
         <div className="profile">
             <h1>Profile</h1>
             <div className="user-info">
