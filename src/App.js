@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-ro
 import MainPage from './pages';
 import NotFoundPage from './pages/404';
 import ProfilePage from './pages/profile';
+import Chat from './components/Chat/Chat';
 
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />     
+        <Navbar />   
         <Switch>
             <Route path='/' exact component={Login} />
             <Route path='/dashboard' exact component={ProfilePage} />
+            <Route path='/chat' exact component={Chat} />
             <Route path='/home' component={ProfilePage} />
             <Route path='/pet' component={Home} />
             <Route path='/sign-in' component={Signin} />

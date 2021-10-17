@@ -20,6 +20,11 @@ export const SidebarData = [
         url: "/calendar"
     },
     {
+        title: "Chat",
+        icon: <AccountCircleIcon />,
+        url: "/chat"
+    },
+    {
         title: "Pet",
         icon: <AccountCircleIcon />,
         url: "/pet"
